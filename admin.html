@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <form action="" method="post" class="admin-form">
+    <h1>Admin Login</h1>
+    <div class="text">
+      <input type="text" name="flogin">
+      <span data-placeholder="Username"></span>
+    </div>
+    <div class="text">
+      <input type="password" name="fpassword">
+      <span data-placeholder="Password"></span>
+  </div>
+  <input type="submit" value="Login" class="loginBtn">
+  <div class="bottom-text">
+    <p> Oublier le Mot de Passe ?<a href="#">Réinitialiser Le mot de passe</a></p>
+    </div>
+  </form>
+  <script>
+    $(".text input").on("focus", function(){
+      $(this).addClass("focus");
+    });
+    $(".text input").on("blur", function(){
+        if($(this).val()=="")
+        $(this).removeClass("focus");
+    });
+</script>
+
+</body>
+</html>
