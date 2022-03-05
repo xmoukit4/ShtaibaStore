@@ -111,7 +111,7 @@
 
                 </tbody>
             </table>
-            <a href="#">Show All</a>
+            <a href="./commandes.php">Show All</a>
 
 
         </div>
