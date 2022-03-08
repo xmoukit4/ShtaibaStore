@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-    rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
-    <title>Produits</title>
-</head>
-<body>
 <div class="container">
         <aside>
             <div class="top">
@@ -55,7 +44,7 @@
                 </button>
         </aside>
         
-
+</div>
     <div class="right">
             <div class="top">
                 <button id="menu-btn">
@@ -64,40 +53,5 @@
                         </span>
                 </button>
             </div>
-            
-            <div id="page">
-
-            <div class="addProduct">
-                <button class="button">Ajouter Produit</button>
-                <button class="button1">Supprimer Produit</button>
-        
-            </div>
-
-            <div class="recent-orders">
-            <h2>Les Produits</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Num Produit</th>
-                        <th>Nom Produit</th>
-                        <th>Categorie</th>
-                        <th>Stock</th>
-                        <th>Prix</th>
-                        <th>Edit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-
-            </div>
-
     </div>
-
-    </div>
-<script src="./redirections.js"></script>
-<script src="./order.js"></script>
-
-<script src="./products.js"></script>
-</body>
-</html>
+    

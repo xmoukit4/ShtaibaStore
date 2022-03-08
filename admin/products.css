@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --color-primary:#48cae4;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning: #ffbb55;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#48cae4;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-dark-variant:#677483;
+    --card-border-raduis:2rem;
+    --border-raduis-1: 0.4rem;
+    --border-raduis-2: 0.8rem;
+    --border-raduis-3: 1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+html{
+    font-size: 14px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Rubik,sans-serif;
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    user-select: none;
+    overflow-x: hidden;
+}
+a{
+    color: var(--color-dark);
+}
+.container {
+    display:grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.4 auto;
+    grid-template-columns: 14rem auto 23rem;
+
+}
+a.close{
+    color: #363949;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+h3{
+    font-size: 0.87rem;
+    color: black;
+
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.75rem;
+}
+.text-muted{
+    color: var(--color-info-dark);
+}
+p{
+    color:var(--color-dark-variant);
+}
+b{
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary)
+}
+.danger{
+    color: var(--color-danger)
+}
+.success{
+    color: var(--color-success)
+}
+.warning{
+    color: var(--color-warning)
+}
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo img{
+    margin-left: 2rem;
+    width: 9rem;
+    height: 4rem;
+}
+
+aside .close {
+    display: none;
+}
+
+aside .side-bar{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height : 86vh;
+    position:relative;
+    top: 3rem;
+}
+aside h3{
+    font-weight: 700;
+}
+
+aside .side-bar a{
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    color: var(--color-info-dark);
+}
+aside .side-bar button{
+    border: none;
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    color: var(--color-info-dark);
+    background-color: white;
+}
+aside .side-bar button span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+aside .side-bar button:last-child{
+    position:absolute;
+    bottom:2rem;
+    width: 100%;
+}
+
+aside .side-bar button.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+aside .side-bar button.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-primary);
+
+
+}
+
+aside .side-bar button.active span{
+    color:var(--color-primary);
+
+    margin-left: calc(1rem-3px);
+
+}
+aside .side-bar button:hover{
+    color: var(--color-primary);
+
+}
+aside .side-bar button:hover span{
+    margin-left: 1rem;
+} 
+
+
+main{
+    padding: 1.1rem;
+
+    margin-top: 1.4rem;
+}
+main h1{
+    padding-left: 2rem;
+}
+
+main .insights{
+    padding: 1.1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+
+}
+
+main .insights > div {
+    background:#f6f6f9;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-raduis);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+
+main .insights > div span {
+    background: coral;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+}
+main .insights > div.sales span {
+    background: var(--color-success);
+}
+
+main .insights > div.orders span {
+background: var(--color-warning);
+}
+main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+main .recent-orders{
+    margin-top: 2rem;
+}
+
+main .recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+    background: #fff;
+    width: 100%;
+    border-radius: var(--card-border-raduis);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+
+
+main table tbody tr:last-child{
+    border:none;
+}
+main .recent-orders a{
+    text-align: center;
+    display:block;
+    margin: 1 auto;
+    color: var(--color-primary);
+}
+.right{
+    margin-top:1.4rem;
+    width: 100vw;
+
+
+}
+
+.right .top{
+    display:flex;
+    justify-content: end;
+    gap: 2rem;
+    background-color: gray;
+
+}
+
+.right .top button{
+    display: none;
+
+}
+
+
+
+ /* media queries */
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+    .container .logo{
+        display: none;
+    }
+    aside .side-bar h3{
+        display: none;
+    }
+    aside .side-bar a{
+        width: 5.6rem;
+
+    }
+    aside .side-bar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    main .recent-orders {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 2rem 0 0 8.8rem;
+
+    }
+
+    main .recent-orders table{
+        width: 83vh;
+
+    }
+    main table tbody tr td:last-child
+    {
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    aside{
+        position: fixed;
+        left: -100%;
+        background: white;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display:none;
+        animation: showMenu 400ms ease forwards;
+    }
+    @keyframes showMenu {
+        to{
+            left:0;
+        }
+        
+    }
+    aside .logo{
+        display:none;
+    }
+    aside .side-bar h3{
+        display:inline;
+    }
+    aside .side-bar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .side-bar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+    aside .close{
+        display: inline-block;
+        cursor:pointer;
+        margin-left: 14rem;
+    }
+
+
+    .right .recent-orders{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width :100%;
+    }
+    .right .recent-orders table{
+        width :100%;
+        margin: 0;
+    }
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top:0;
+        left:0;
+        align-items: center;
+        padding :0 0.8rem;
+        height: 4.6rem;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+        border: none;
+    }
+    .right .top button span {
+        font-size: 2rem;
+    }
+    .right #page {
+        margin-top: 5rem;
+    }
+    
+}
+.right #page{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-left: 1.5rem;
+
+}
+
+.right .addProduct{
+    display: flex;
+    justify-content: end;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    align-items: center;
+    gap: 5rem;
+    height: 10%;
+
+}
+.right .addProduct .button,.right .addProduct .button1{
+    width: 10rem;
+    height: 5vh;
+    border: none;
+    background-color: var(--color-primary);
+    border-radius: var(--border-raduis-3);
+    outline: none;
+    cursor: pointer;
+    box-shadow:0.3rem 0.3rem var(--color-light);
+}
+.right .addProduct .button1{
+    background-color: var(--color-danger);
+    
+
+}
+
+.right .addProduct .button:hover{
+    background-color: #63d0e6;
+    box-shadow: none;
+
+}
+.right .addProduct .button1:hover{
+    background-color: #63d0e6;
+    box-shadow: none;
+
+}
+
+.right .recent-orders{
+
+}
+
+.right .recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+
+.right .recent-orders table {
+    background: #fff;
+    width: 100%;
+    border-radius: var(--card-border-raduis);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .recent-orders table:hover {
+    box-shadow: none;
+}
+
+.right table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+
+
+.right table tbody tr:last-child{
+    border:none;
+}
+
+.right table tbody td .Editer{
+    color: rgb(223, 133, 24);
+}
+
+
+
+main .recent-orders a{
+    text-align: center;
+    display:block;
+    margin: 1 auto;
+    color: var(--color-primary);
+}
+
