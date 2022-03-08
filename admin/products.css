@@ -180,13 +180,10 @@ aside .side-bar button.active::before{
     width: 6px;
     height: 100%;
     background-color: var(--color-primary);
-
-
 }
 
 aside .side-bar button.active span{
     color:var(--color-primary);
-
     margin-left: calc(1rem-3px);
 
 }
@@ -201,7 +198,6 @@ aside .side-bar button:hover span{
 
 main{
     padding: 1.1rem;
-
     margin-top: 1.4rem;
 }
 main h1{
@@ -210,11 +206,9 @@ main h1{
 
 main .insights{
     padding: 1.1rem;
-
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.6rem;
-
 }
 
 main .insights > div {
@@ -297,8 +291,6 @@ main .recent-orders a{
 .right{
     margin-top:1.4rem;
     width: 100vw;
-
-
 }
 
 .right .top{
@@ -306,14 +298,11 @@ main .recent-orders a{
     justify-content: end;
     gap: 2rem;
     background-color: gray;
-
 }
 
 .right .top button{
     display: none;
-
 }
-
 
 
  /* media queries */
@@ -500,10 +489,6 @@ main .recent-orders a{
 
 }
 
-.right .recent-orders{
-
-}
-
 .right .recent-orders h2{
     margin-bottom: 0.8rem;
 }
@@ -528,8 +513,6 @@ main .recent-orders a{
     color: var(--color-dark-variant);
 }
 
-
-
 .right table tbody tr:last-child{
     border:none;
 }
@@ -538,12 +521,9 @@ main .recent-orders a{
     color: rgb(223, 133, 24);
 }
 
-
-
 main .recent-orders a{
     text-align: center;
     display:block;
     margin: 1 auto;
     color: var(--color-primary);
 }
-

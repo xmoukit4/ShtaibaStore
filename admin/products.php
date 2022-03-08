@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
     rel="stylesheet">
     <link rel="stylesheet" href="products.css">
+    
     <title>Produits</title>
 </head>
 <body>
@@ -93,11 +94,10 @@
             </div>
 
     </div>
-
     </div>
 <script src="./redirections.js"></script>
 <script src="./order.js"></script>
-
 <script src="./products.js"></script>
+
 </body>
 </html>
