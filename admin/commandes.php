@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
     rel="stylesheet">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="styles/admin.css">
     <title>Document</title>
 </head>
 <body>
@@ -57,7 +57,7 @@
         
 </div>
     </div>
-<script src="./redirections.js"></script>
-<script src="./productPage.js"></script>
+<script src="js/redirections.js"></script>
+<script src="js/productPage.js"></script>
 </body>
 </html>
