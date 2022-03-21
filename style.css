@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+:root {
+    background-color: #ffff;
+    /* smooth the color transition */
+    transition: background-color .6s;
+}
+:root:hover {
+    background-color:  #f7f8fa
+}
+
+header .TopNavbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 100px;
+    background: #eeeeee ;
+    color:#48cae4;
+    overflow: hidden;
+    
+  }
+  header .TopNavbar.logos{
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black;
+  }
+  header .TopNavbar.logos span{
+    color: rgb(78, 78, 78) ;
+  }
+
+  header .TopNavbar li {
+    float: left;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+header .TopNavbar li a {
+         color: black;
+         text-align: center;
+         display: block;
+         padding: 6px 10px;
+
+}
+header .TopNavbar a:hover {
+    background-color:  #ccc;
+    color: black;
+  }
+  
+  header .TopNavbar .search-container {
+    float: center;
+  }
+  
+  header .TopNavbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  header .TopNavbar .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  header .TopNavbar .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header .TopNavbar.search-container {
+      float: none;
+    }
+    header .TopNavbar a, header .TopNavbar input[type=text], header .TopNavbar .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+    header .TopNavbar input[type=text] {
+      border: 1px solid #ccc;  
+    }
+
+    header.SecondNavbar{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right:0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 19px 100px;
+      background: #eeeeee ;
+      color:#48cae4;
+      overflow: hidden;
+      }
+      
+
+      header.SecondNavbar ul{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+      }
+      header.SecondNavbar ul li a{
+        color: #494949;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 12px;
+   
+       }
+       header.banner img{
+        width: 100% ;
+       height: 400px;
+      
+      }
+  
+
+
+ 
+
