@@ -17,4 +17,4 @@ function sliderAuto()
     
 }
 
-window.setInterval(sliderAuto,30000) ;
+window.setInterval(sliderAuto,1000) ;
