@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --color-primary:#48cae4;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning: #ffbb55;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#48cae4;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-dark-variant:#677483;
+    --card-border-raduis:2rem;
+    --border-raduis-1: 0.4rem;
+    --border-raduis-2: 0.8rem;
+    --border-raduis-3: 1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    appearance: none;
+
+}
+html{
+    font-size: 14px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Rubik,sans-serif;
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    user-select: none;
+    overflow-x: hidden;
+}
+a{
+    color: var(--color-dark);
+}
+.container {
+    display:grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.4 auto;
+    grid-template-columns: 18rem auto 0;
+
+}
+a.close{
+    color: #363949;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+h3{
+    font-size: 0.87rem;
+    color: black;
+
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.75rem;
+}
+.text-muted{
+    color: var(--color-info-dark);
+}
+p{
+    color:var(--color-dark-variant);
+}
+b{
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary)
+}
+.danger{
+    color: var(--color-danger)
+}
+.success{
+    color: var(--color-success)
+}
+.warning{
+    color: var(--color-warning)
+}
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+aside .logo img{
+    margin-left: 1.5rem;
+        padding:0;
+    width: 10rem;
+    height: 10rem;
+}
+
+aside .close {
+    display: none;
+}
+
+aside .side-bar{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height : 86vh;
+    position:relative;
+}
+aside h3{
+    font-weight: 700;
+}
+
+aside .side-bar a{
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    color: var(--color-info-dark);
+}
+aside .side-bar button{
+    border: none;
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    color: var(--color-info-dark);
+    background-color: white;
+}
+aside .side-bar button span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+aside .side-bar button:last-child{
+    position:absolute;
+    bottom:5rem;
+    width: 100%;
+}
+
+aside .side-bar button.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+aside .side-bar button.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-primary);
+
+
+}
+
+aside .side-bar button.active span{
+    color:var(--color-primary);
+
+    margin-left: calc(1rem-3px);
+
+}
+aside .side-bar button:hover{
+    color: var(--color-primary);
+
+}
+aside .side-bar button:hover span{
+    margin-left: 1rem;
+} 
+
+
+main{
+    padding: 1.1rem;
+
+}
+
+form{
+    display:table;
+    width:100% ;
+}
+main h1 {
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+form div{
+    display: table-row;
+
+}
+form label {
+    display: table-cell;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+}
+form input{ 
+    display: table-cell;
+    height: 2.5rem;
+    width: 100%;
+    margin-right: 50rem;
+    border: 2px solid #dadada;
+    text-align: center;
+    border-radius: 7px;}
+
+#descriptionProduit{
+    display: table-cell;
+    width: 100%;
+    margin-right: 50rem;
+    border: 2px solid #dadada;
+    text-align: center;
+    border-radius: 7px;
+
+    margin-bottom: 2rem;
+}
+
+form select{
+    display: table-cell;
+    height: 2rem;
+    width: 100%;
+    margin-right: 50rem;
+    border: 2px solid #dadada;
+    text-align: center;
+    border-radius: 7px;
+}
+
+
+.flextaille{
+display: flex;
+align-items: center;
+
+}
+
+.tailles div input{
+    display: table-cell;
+    height: 3rem;
+    appearance:auto;
+    width: 100%;
+    margin-right: 12rem;
+    border:none;
+}
+.tailles div label {
+    display: table-cell;
+font-size: 2rem;
+}
+.tailles div input:focus{
+    outline: none;
+    border-color: none;
+    box-shadow: none;
+
+}
+
+.buttonSubmit input{
+    display: table-cell;
+    width: 50%;
+    height: 5rem;
+    margin-left: 30%;
+}
+#descriptionProduit:focus{
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+form input:focus{
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+form select:focus{
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+label.submitLabel{
+    visibility: hidden;
+}
+.buttons{
+    display: inline;
+}
+
+.buttons input{
+    background-color: var(--color-primary);
+    width: 100%;
+    color: white;
+    border:none;
+    box-shadow: var(--box-shadow);
+    height: 4rem;
+    margin-top: 1rem;
+
+
+}
+
+.uploadImages{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 450px;
+    position: relative;
+    margin:  50px auto;
+    padding: 50px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+}
+input[type="file"]{
+    display: none;
+}
+#fileLabel{
+    display: block;
+    position: relative;
+    background-color: #48cae4;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container p{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+#images{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+figure{
+    width: 45%;
+    height: 45%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+figcaption{
+    text-align: center;
+    font-size: 2.4vmin;
+    margin-top: 0.5vmin;
+}
