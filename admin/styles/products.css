@@ -41,7 +41,6 @@ body{
     font-family: Rubik,sans-serif;
     font-size: 0.88rem;
     color: var(--color-dark);
-    user-select: none;
     overflow-x: hidden;
 }
 a{
@@ -527,3 +526,23 @@ main .recent-orders a{
     margin: 1 auto;
     color: var(--color-primary);
 }
+
+
+.pagination {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 30vw;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  

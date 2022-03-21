@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
     rel="stylesheet">
     <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="styles/products.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -55,9 +57,51 @@
                 </button>
         </aside>
         
-</div>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                        </span>
+                </button>
+            </div>
+            
+            <div id="page">
+            <div class="recent-orders">
+            <h2>Commandes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Num Commande</th>
+                        <th>Num Client</th>
+                        <th>Articles</th>
+                        <th>Prix Totale</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a  class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+            </div>
     </div>
+    </div>
+
+    </div>
+    
 <script src="js/redirections.js"></script>
-<script src="js/productPage.js"></script>
+<script src="js/order.js"></script>
+<script src="js/products.js"></script>
+
 </body>
 </html>

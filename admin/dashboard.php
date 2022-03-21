@@ -14,7 +14,7 @@
         <aside>
             <div class="top">
             <div class="logo">
-                <img src="../Assets/Logo.png" alt="Logo">
+                <img src="../Assets/Logo.svg" alt="Logo">
             </div>
             <div class="close" id="closeBtn">
                 <span class="material-icons-sharp">

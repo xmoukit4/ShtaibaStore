@@ -17,3 +17,7 @@ function loadCommandesPage(){
     window.location.href = "./commandes.php";
 
 }
+function addProduct(){
+    window.location.href = "./addProduct.php";
+
+}

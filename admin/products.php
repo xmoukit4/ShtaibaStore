@@ -56,7 +56,6 @@
                 </button>
         </aside>
         
-
     <div class="right">
             <div class="top">
                 <button id="menu-btn">
@@ -69,7 +68,7 @@
             <div id="page">
 
             <div class="addProduct">
-                <button class="button">Ajouter Produit</button>
+                <button onclick="addProduct()" class="button">Ajouter Produit</button>
                 <button class="button1">Supprimer Produit</button>
         
             </div>
@@ -88,13 +87,26 @@
                         <th>Edit</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                
-
+                </tbody>
+            </table>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a  class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
             </div>
+            </div>
+    </div>
+    </div>
 
     </div>
-    </div>
+    
 <script src="js/redirections.js"></script>
 <script src="js/order.js"></script>
 <script src="js/products.js"></script>
