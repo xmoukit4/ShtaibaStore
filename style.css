@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;800&display=swap');
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+  
+  }
+ 
+
+  .first_navbar {
+    position: sticky;
+    overflow: hidden;
+    width: 100%;
+    height: 25px;
+    margin-bottom: 0px;
+    background-color: #111;
+  }
+  .first_navbar h4 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  
+  .wrapper .TopNavbar{
+      margin-top: 0px;
+      padding: 0px; margin: 0px;
+      width: 100%;
+      height: 65px;
+      background: #f9f9f9 ;
+      padding: 0 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    .wrapper.TopNavbar.TopNavbar_left
+    {
+      display: flex;
+      align-items: center;
+    }
+    
+    .wrapper .TopNavbar.TopNavbar_left{
+      padding: 80px 0;
+    }
+   .wrapper .TopNavbar.TopNavbar_left p{
+      font-size: 26px;
+      color: #111;
+      margin-right: 90px;
+    }
+    .wrapper .TopNavbar.TopNavbar_left p span{
+      color: #90e0ef ;
+      font-size: 24px;
+    }
+    
+    .wrapper .TopNavbar .TopNavbar_right ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    .wrapper .TopNavbar .TopNavbar_right ul li { 
+      float: left;
+      font-size: 1.2em;
+      list-style-type: none;
+  }
+  .wrapper .TopNavbar .TopNavbar_right ul li a {
+          color: black;
+          transition: .5s;
+          text-transform: capitalize ;
+          text-decoration: none;
+          padding: 0 10px;
+          padding: 6px 10px;
+          margin: 0 5px;
+          display: block;
+          letter-spacing: 2px;
+          text-align: center;
+
+  }
+  .wrapper .TopNavbar .TopNavbar_right ul li a:hover {
+    color: #90e0ef;
+    cursor: pointer;
+    }
+    
+    .wrapper .TopNavbar .TopNavbar_right.search-container {
+      float: center; 
+    }
+    
+    .wrapper .TopNavbar .TopNavbar_right input[type=text] {
+      padding: 6px;
+      margin-top: 7px;
+      font-size: 17px;
+      border: none;
+    }
+    
+    .wrapper .TopNavbar .TopNavbar_right.search-container .buttonSearch button {
+      float: center;
+      padding: 6px 10px;
+      margin-top: 3px;
+      margin-right: 16px;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .wrapper .TopNavbar .TopNavbar_right.search-container .buttonSearch button:hover {
+      background: #f9f9f9;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .wrapper .TopNavbar.TopNavbar_right.search-container {
+        float: none;
+      } }
+      .wrapper .TopNavbar.TopNavbar_right a, .wrapper.TopNavbar.TopNavbar_right input[type=text], .wrapper.TopNavbar.TopNavbar_right.search-container .buttonSearch button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+      }
+      .SecondNavbar{
+        margin-top: 20px;
+        width: 100%;
+        height: 45px;
+        background-color: #fff ;
+      }
+      
+       .SecondNavbar ul{
+           display: flex;
+           list-style: none;
+        }
+        .SecondNavbar ul li{
+          float: left;
+          font-size: 1.2em;
+          list-style: none;
+          padding: 6px 10px;
+        }
+        .SecondNavbar ul li a{
+          color: #111;
+          text-decoration: none;
+          transition: .5s;
+        }
+        .SecondNavbar ul li a:hover {
+          color: #90e0ef;
+          cursor: pointer;
+        }
+       
+     .femme_premier_SOUSliste , .vêtements_SOUSliste , .chaussures_et_acc_SOUSliste {
+      display: none;
+    }
+    
+    .SecondNavbar ul li:hover .femme_premier_SOUSliste ,.SecondNavbar ul li .femme_premier_SOUSliste:hover .vêtements_SOUSliste ,.SecondNavbar ul li .femme_premier_SOUSliste:hover .chaussures_et_acc_SOUSliste 
+    {
+    display: block;
+    position: absolute;
+    background-color:#fff ;
+    width: 100%;
+    height:50px ;
+    padding: 6px 10px ;
+    font-size: 1em;
+    }
+    
+    .femme_premier_SOUSliste ul li ,.vêtements_SOUSliste ul li , .chaussures_et_acc_SOUSliste ul li{
+      font-size: 1em;
+      float: none;
+    }
+
+    .femme_premier_SOUSliste ul li a:hover , .vêtements_SOUSliste ul li a:hover ,  .chaussures_et_acc_SOUSliste ul li a:hover
+    {  
+      background-color: transparent;
+      color: #90e0ef;
+      padding: 0px 0px;
+    }
+    
+/*******************************************image******************************************************************/
+     .img_livraison{
+      margin-top: 20px;
+      margin-bottom: 20px;
+     }
+     .img_livraison img{
+      width: 100%;
+      height: auto;
+      margin: 0px;
+
+     }
+      .img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .img img
+      {
+        width: 100%;
+      } 
+      .img_Nouveautés{
+        position: sticky;
+        overflow: hidden;
+        margin-top: 20px;
+        width: 100%;
+        height: 150px;    
+      }  
+     .img_Nouveautés img{
+      width: 100%;
+     }
+     .banner img{
+      width: 100%	;
+      height:auto; }  
+
+     .photos  {
+        width: 100%	; 
+     } 
+     .photos img {
+      width: 100%	;
+      height: 575px;  
+   } 
+/****************************************Nouveautés**********************************************/
+.Nouveautés{
+  width: 100%	;
+  height: 60px; 
+  background-color: transparent; 
+  font-size: 1.9em;
+  color: black; 
+  padding: 0px 20px;
+}
+.card_border {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.cards .card img{
+  width: 300px;
+  height: 450px; 
+}
+.cards .card .card-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image2 img{
+  width: 100%	;
+  height: 250px; 
+}
+/**************************************************************************************/
+
+
+/****************************************FOOTER**********************************************/
+
+footer {
+  background-color: #f9f9f9;
+  color: #111;
+  padding: 20px 0 10px 0 ;
+  text-align: center;
+}
+
+footer h2{
+  font-size: 2em;
+
+}
+footer form {
+margin: 0 auto;
+max-width: 900px;
+}
+footer input, footer textarea, footer button{
+                   border: none;
+                   width: 55%;
+                   padding: 15px 10px; 
+                   margin: 1px 0;
+                   font-size: 1.2em;
+                   font-family: 'advent pro','sans-serif';
+                   border-radius: 8px;
+                   background-color: white;
+}
+footer textarea {
+    height: 120px; 
+}
+footer button {
+  font-size: 1.5em;
+  background-color: #ccc;
+}
+footer button:hover {
+        background-color: #e55039;
+        color:#111 ;
+        cursor:pointer;
+        transition: 0.3s ease-in-out;
+}
+footer #deuxiemeTrait {
+          height: 1px;
+          width:75% ;
+          background-color:#111 ;
+          margin: 60px auto;
+}
+footer #copyrightEtIcons {
+             display: flex;
+             margin-bottom: 20px;
+             padding: 0 10%;
+}
+footer #copyright {
+      width: 50%;
+      text-align: left;
+      color: #111;
+}
+footer #icons {
+  width: 50%;
+  text-align: right;
+}
+footer #icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #111;
+}
+footer #icons a :hover {
+           transform: scale(1.5);
+           transition: 0.1s;
+}
+/*****************************************************************************************************/
